@@ -1,0 +1,21 @@
+{
+  "name": "thenovaeffect",
+  "description": "A website for the nova effect",
+  "main": "",
+  "authors": [
+    "Matt <matthew9510@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/matthew9510/thenovaeffect",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-audio-player": "^1.1.1"
+  }
+}
