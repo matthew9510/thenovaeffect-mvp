@@ -1,0 +1,39 @@
+div.content {
+  height: 100%;
+  background-color: black;
+}
+
+mat-sidenav-container {
+  height: 100%;
+  background-color: black;
+  color: white; // text color
+}
+
+mat-sidenav {
+  background-color: black;
+  color: white; // text color
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none;
+}
