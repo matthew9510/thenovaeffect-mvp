@@ -1,4 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+/* gets applied last */
+/* The rules below set the view to be 100% of screen*/
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: NovaFont;
+  src: url("./assets/NOVABOLD.otf");
+}
+
+@font-face {
+  font-family: Quote;
+  src: url("./assets/VT323-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  // max-height: 100vh; // check this later
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-root {
+  height: 100%; // 100% of the 100vh
+  width: 100%;
+}
