@@ -3,6 +3,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { LayoutModule } from "@angular/cdk/layout";
+import { MatIconModule } from "@angular/material/icon";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./Components/home/home.component";
@@ -14,6 +16,8 @@ import { HomeComponent } from "./Components/home/home.component";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
+    LayoutModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

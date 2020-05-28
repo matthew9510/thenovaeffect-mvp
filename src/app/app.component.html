@@ -4,7 +4,7 @@
   color="#000000"
 ></paper-audio-player> -->
 
-<div class="content">
+<div class="content" *ngIf="isMobile">
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" position="end">
       <h3><a routerLink="home" class="side-nav-link">Home</a></h3>
@@ -15,7 +15,12 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button>
+      <div class="mobile-header-button">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon [inline]="true">menu</mat-icon>
+        </button>
+      </div>
+      <img class="mobile-logo" src="../assets/logo.png" />
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>

@@ -1,6 +1,9 @@
 div.content {
   height: 100%;
+  max-height: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 mat-sidenav-container {
@@ -12,6 +15,38 @@ mat-sidenav-container {
 mat-sidenav {
   background-color: black;
   color: white; // text color
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+div.mobile-header-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin-top: 15px;
+  font-size: 40px;
+  -webkit-appearance: none;
+  // background-color: black;
+  border: 0;
+}
+
+mat-icon {
+  color: white;
+}
+
+img.mobile-logo {
+  align-self: center;
+  width: 350px;
+  height: 250px;
+}
+
+h3 {
+  font-size: 80px;
 }
 
 /* unvisited link */
@@ -36,4 +71,29 @@ a:hover {
 a:active {
   color: white;
   text-decoration: none;
+}
+
+// remember if using max-widths then higher numbers go on top
+@media only screen and (max-width: 959.99px) and (orientation: landscape) {
+  h3 {
+    font-size: 40px;
+  }
+  img.mobile-logo {
+    width: 200px;
+    height: 130px;
+  }
+  div.content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 599.99px) and (orientation: portrait) {
+  h3 {
+    font-size: 30px;
+  }
+  img.mobile-logo {
+    width: 200px;
+    height: 130px;
+  }
 }
