@@ -18,6 +18,9 @@ mat-sidenav {
 }
 
 mat-sidenav-content {
+}
+
+div.sidenav-content {
   display: flex;
   flex-direction: column;
 }
@@ -29,9 +32,11 @@ div.mobile-header-button {
 
 button {
   margin-top: 15px;
+  padding-left: 0px;
+  margin-right: 0px;
   font-size: 40px;
   -webkit-appearance: none;
-  // background-color: black;
+  background-color: black;
   border: 0;
 }
 
