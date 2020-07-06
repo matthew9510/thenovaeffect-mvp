@@ -7,21 +7,25 @@
 <div class="content" *ngIf="isMobile">
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" position="end">
-      <h3><a routerLink="home" class="side-nav-link">Home</a></h3>
-      <h3><a routerLink="music" class="side-nav-link">Music</a></h3>
-      <h3><a routerLink="videos" class="side-nav-link">Videos</a></h3>
-      <h3><a routerLink="shows" class="side-nav-link">Shows</a></h3>
-      <h3><a routerLink="shop" class="side-nav-link">Shop</a></h3>
+      <div class="links-container">
+        <h1 class="side-nav-text first-link"><a routerLink="home">Home</a></h1>
+        <h1 class="side-nav-text"><a routerLink="music">Music</a></h1>
+        <h1 class="side-nav-text"><a routerLink="videos">Videos</a></h1>
+        <h1 class="side-nav-text"><a routerLink="shows">Shows</a></h1>
+        <h1 class="side-nav-text last-link"><a routerLink="shop">Shop</a></h1>
+      </div>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <div class="mobile-header-button">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon [inline]="true">menu</mat-icon>
-        </button>
+      <div class="sidenav-content">
+        <div class="mobile-header-button">
+          <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon [inline]="true">menu</mat-icon>
+          </button>
+        </div>
+        <img class="mobile-logo" src="../assets/logo.png" />
+        <router-outlet></router-outlet>
       </div>
-      <img class="mobile-logo" src="../assets/logo.png" />
-      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

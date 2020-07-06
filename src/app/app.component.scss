@@ -1,3 +1,5 @@
+@import "../styles.scss";
+
 div.content {
   height: 100%;
   max-height: 100%;
@@ -15,11 +17,23 @@ mat-sidenav-container {
 mat-sidenav {
   background-color: black;
   color: white; // text color
+  width: 40%;
 }
 
 mat-sidenav-content {
+}
+
+div.sidenav-content {
   display: flex;
   flex-direction: column;
+}
+
+// For sidenav links
+div.links-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 div.mobile-header-button {
@@ -29,9 +43,11 @@ div.mobile-header-button {
 
 button {
   margin-top: 15px;
+  padding-left: 0px;
+  margin-right: 0px;
   font-size: 40px;
   -webkit-appearance: none;
-  // background-color: black;
+  background-color: black;
   border: 0;
 }
 
@@ -45,8 +61,34 @@ img.mobile-logo {
   height: 250px;
 }
 
-h3 {
-  font-size: 80px;
+// For sidenav links
+h1 > a {
+  font-size: 40px;
+  font-family: NovaFont;
+  color: black;
+}
+
+// For sidenav links
+h1.side-nav-text {
+  text-align: center;
+  text-shadow: -1px -1px 1px #ffffff, -1px 0px 1px #ffffff, -1px 1px 1px #ffffff,
+    -1px 2px 1px #ffffff, -1px 3px 1px #ffffff, -1px 4px 1px #ffffff,
+    -1px 5px 1px #ffffff, -1px 6px 1px #ffffff, -1px 7px 1px #ffffff,
+    -1px 8px 1px #ffffff, -1px 9px 1px #ffffff, -1px 10px 1px #ffffff,
+    -1px 11px 1px #ffffff, -1px 12px 1px #ffffff, -1px 13px 1px #ffffff,
+    -1px 14px 1px #ffffff, -1px 15px 1px #ffffff, -1px 16px 1px #ffffff,
+    0px -1px 1px #ffffff, 0px 0px 1px #ffffff, 0px 1px 1px #ffffff,
+    0px 2px 1px #ffffff, 0px 3px 1px #ffffff, 0px 4px 1px #ffffff,
+    0px 5px 1px #ffffff, 0px 6px 1px #ffffff, 0px 7px 1px #ffffff,
+    0px 8px 1px #ffffff, 0px 9px 1px #ffffff, 0px 10px 1px #ffffff,
+    0px 11px 1px #ffffff, 0px 12px 1px #ffffff, 0px 13px 1px #ffffff,
+    0px 14px 1px #ffffff, 0px 15px 1px #ffffff, 1px 1px 1px #ffffff,
+    1px 2px 1px #ffffff, 1px 3px 1px #ffffff, 1px 4px 1px #ffffff,
+    1px 5px 1px #ffffff, 1px 6px 1px #ffffff, 1px 7px 1px #ffffff,
+    1px 8px 1px #ffffff, 1px 9px 1px #ffffff, 1px 10px 1px #ffffff,
+    1px 11px 1px #ffffff, 1px 12px 1px #ffffff, 1px 13px 1px #ffffff,
+    1px 14px 1px #ffffff, 1px 15px 1px #ffffff, 1px 16px 1px #ffffff,
+    -1px -1px 6px #ffffff, 0px -1px 4px #ffffff;
 }
 
 /* unvisited link */
@@ -64,7 +106,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* selected link */
@@ -75,9 +117,6 @@ a:active {
 
 // remember if using max-widths then higher numbers go on top
 @media only screen and (max-width: 959.99px) and (orientation: landscape) {
-  h3 {
-    font-size: 40px;
-  }
   img.mobile-logo {
     width: 200px;
     height: 130px;
@@ -86,14 +125,43 @@ a:active {
     padding-left: 40px;
     padding-right: 40px;
   }
+  mat-sidenav {
+    width: 20%;
+  }
+
+  // For sidenav links
+  h1 > a {
+    font-size: 30px;
+  }
+  // For sidenav links
+  h1.side-nav-text {
+    margin-top: 5%;
+  }
+
+  h1.first-link {
+    margin-top: 5%;
+  }
+
+  h1.last-link {
+    margin-bottom: 10%;
+  }
 }
 
 @media only screen and (max-width: 599.99px) and (orientation: portrait) {
-  h3 {
-    font-size: 30px;
-  }
   img.mobile-logo {
     width: 200px;
     height: 130px;
+  }
+  mat-sidenav {
+    width: 40%;
+  }
+
+  // For sidenav links
+  h1 > a {
+    font-size: 40px;
+  }
+  // For sidenav links
+  h1.side-nav-text {
+    margin-top: 15%;
   }
 }
