@@ -1,3 +1,5 @@
+@import "../styles.scss";
+
 div.content {
   height: 100%;
   max-height: 100%;
@@ -101,5 +103,16 @@ a:active {
   img.mobile-logo {
     width: 200px;
     height: 130px;
+  }
+
+  // For sidenav links
+  h1 > a {
+    font-size: 40px;
+    font-family: NovaFont;
+  }
+  // For sidenav links
+  h1.side-nav-text {
+    margin-top: 15%;
+    text-align: center;
   }
 }
