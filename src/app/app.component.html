@@ -7,11 +7,13 @@
 <div class="content" *ngIf="isMobile">
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" position="end">
-      <h1 class="side-nav-text"><a routerLink="home">Home</a></h1>
-      <h1 class="side-nav-text"><a routerLink="music">Music</a></h1>
-      <h1 class="side-nav-text"><a routerLink="videos">Videos</a></h1>
-      <h1 class="side-nav-text"><a routerLink="shows">Shows</a></h1>
-      <h1 class="side-nav-text"><a routerLink="shop">Shop</a></h1>
+      <div class="links-container">
+        <h1 class="side-nav-text first-link"><a routerLink="home">Home</a></h1>
+        <h1 class="side-nav-text"><a routerLink="music">Music</a></h1>
+        <h1 class="side-nav-text"><a routerLink="videos">Videos</a></h1>
+        <h1 class="side-nav-text"><a routerLink="shows">Shows</a></h1>
+        <h1 class="side-nav-text last-link"><a routerLink="shop">Shop</a></h1>
+      </div>
     </mat-sidenav>
 
     <mat-sidenav-content>
