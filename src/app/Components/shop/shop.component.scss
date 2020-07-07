@@ -21,3 +21,16 @@ div.content > h1 {
     text-align: center;
   }
 }
+
+// remember if using max-widths then higher numbers go on top
+@media only screen and (max-width: 959.99px) and (orientation: landscape) {
+  div.content {
+    padding-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 599.99px) and (orientation: portrait) {
+  div.content {
+    padding-top: 15%;
+  }
+}

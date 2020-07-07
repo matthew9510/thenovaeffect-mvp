@@ -30,7 +30,7 @@ div.sidenav-content {
 
 // For sidenav links
 div.links-container {
-  height: 80%;
+  height: 80%; // specifically so that the browser menu doesn't hide the last link
   display: flex;
   flex-direction: column;
   justify-content: space-around;
