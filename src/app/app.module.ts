@@ -8,9 +8,20 @@ import { MatIconModule } from "@angular/material/icon";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./Components/home/home.component";
+import { VideosComponent } from "./Components/videos/videos.component";
+import { ShowsComponent } from "./Components/shows/shows.component";
+import { MusicComponent } from "./Components/music/music.component";
+import { ShopComponent } from "./Components/shop/shop.component";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    VideosComponent,
+    ShowsComponent,
+    MusicComponent,
+    ShopComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,83 @@
+#content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-container {
+  padding-top: 5%;
+  height: 30%;
+}
+
+div.quote-container > h4 {
+  font-family: Quote;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: -1%;
+  font-size: 100%;
+}
+
+div.bottom-half {
+  // height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.album-artwork {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-basis: 50%;
+  align-content: center;
+}
+
+img.album {
+  height: 100%;
+  width: 100%;
+  padding: 5% 25%;
+  align-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  // 900 and you do
+  img.album {
+    height: 100%;
+    width: 100%;
+    padding: 28% 13%;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  // anything smaller this will apply
+  img.album {
+    // height: 200px;
+    // width: 200px; // only need to set one
+    height: 100%;
+    width: 100%;
+    padding: 70% 5%;
+    align-self: center;
+  }
+  .quote-container {
+    padding-top: 10%;
+  }
+}
+
+div.playlist {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+div.song {
+  width: 100%;
+  align-self: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-color: white;
+  border-width: thin;
+}
