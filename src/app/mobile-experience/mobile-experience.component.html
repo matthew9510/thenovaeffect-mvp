@@ -1,5 +1,4 @@
-<!-- Mobile View -->
-<div class="content" *ngIf="isMobile === true">
+<!-- <div class="content">
   <mat-sidenav-container>
     <mat-sidenav #sidenav mode="over" position="end">
       <div class="links-container">
@@ -23,18 +22,10 @@
             ><img class="mobile-logo" src="../assets/logo.png"
           /></a>
         </div>
-        <div *ngIf="isMobile === true">
-          <router-outlet *ngIf="isMobile === true"></router-outlet>
+        <div>
+          <router-outlet></router-outlet>
         </div>
       </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
-</div>
-
-<!-- Desktop View -->
-<div class="content" *ngIf="isMobile === false">
-  <app-header *ngIf="isMobile === false"></app-header>
-  <div *ngIf="isMobile === false">
-    <router-outlet *ngIf="isMobile === false"> </router-outlet>
-  </div>
-</div>
+</div> -->
