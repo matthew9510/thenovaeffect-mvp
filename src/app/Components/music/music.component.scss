@@ -1,7 +1,53 @@
 div.content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 15%;
+  margin-top: 5%;
+}
+
+h1.album-name {
+  align-self: center;
+  color: white;
+  font-family: NovaFont;
+  font-size: 30px;
+}
+
+iframe {
+  align-self: center;
+  width: 500px;
+  height: 400px;
+}
+
+// remember if using max-widths then higher numbers go on top
+@media only screen and (max-width: 959.99px) and (orientation: landscape) {
+  div.content {
+    padding-top: 5%;
+    margin-top: 0%;
+  }
+
+  iframe {
+    width: 500px;
+    height: 400px;
+  }
+
+  h1.album-name {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 599.99px) and (orientation: portrait) {
+  div.content {
+    padding-top: 15%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  h1.album-name {
+    font-size: 30px !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -11,18 +57,5 @@ div.content {
     font-family: NovaFont;
     letter-spacing: 5px;
     text-align: center;
-  }
-}
-
-// remember if using max-widths then higher numbers go on top
-@media only screen and (max-width: 959.99px) and (orientation: landscape) {
-  div.content {
-    padding-top: 7%;
-  }
-}
-
-@media only screen and (max-width: 599.99px) and (orientation: portrait) {
-  div.content {
-    padding-top: 15%;
   }
 }
